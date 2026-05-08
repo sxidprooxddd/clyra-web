@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Clyra Innovations</title>
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* HEADER ANIMACION */
+header{
+transition:transform 0.3s ease;
+}
+
+.header-hide{
+transform:translateY(-100%);
+}
+
+/* BOTON MUSICA */
+.music-btn{
+position:absolute;
+right:20px;
+top:25px;
+color:#00ff88;
+font-size:20px;
+cursor:pointer;
+}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:25px;
+box-shadow:0 0 15px rgba(0,0,0,0.5);
+z-index:100;
+transition:0.3s;
+}
+
+.whatsapp:hover{
+transform:scale(1.1);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="imagenes/logopro.png">
+        <h2>Clyra IT</h2>
+    </div>
+
+    <nav>
+        <a href="#inicio"><i class="fa-solid fa-house"></i> Inicio</a>
+        <a href="#servicios"><i class="fa-solid fa-screwdriver-wrench"></i> Servicios</a>
+        <a href="#equipo"><i class="fa-solid fa-users"></i> Equipo</a>
+        <a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a>
+    </nav>
+
+    <!-- BOTON MUSICA -->
+    <div class="music-btn" onclick="toggleMusic()">
+        <i class="fa-solid fa-volume-high"></i>
+    </div>
+
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+
+<video autoplay muted loop id="bg-video">
+<source src="imagenes/videoprolol.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<div class="contenido">
+<h1>Clyra Innovations</h1>
+<p>El mañana es ahora, y lo estamos creando</p>
+<button onclick="scrollToContacto()">Contáctanos</button>
+</div>
+
+</section>
+
+<!-- HISTORIA -->
+<section>
+<h2><i class="fa-solid fa-book"></i> Nuestra Historia</h2>
+
+<p>
+Clyra Innovations nació como un simple trabajo escolar en el Conalep Mazatlán 1, pero rápidamente se convirtió en algo más grande. Lo que empezó como un proyecto, terminó siendo una unión de ideas, esfuerzo y pasión por la tecnología.
+
+Con el tiempo, ese trabajo evolucionó hasta formar un equipo sólido, donde cada integrante aportó algo único para construir lo que hoy somos. En el camino hubo cambios importantes, como la partida de Ángel Durán, quien tomó un rumbo diferente, pero dejó una base y un apoyo que siguen siendo parte de nuestra historia.
+
+Hoy, Clyra Innovations no es solo una empresa, es el resultado de lo que se puede lograr cuando un grupo cree en lo que hace y trabaja unido para hacerlo realidad.
+</p>
+
+<p>
+Hoy en día, Clyra continúa creciendo con un enfoque en innovación, eficiencia y atención personalizada.
+</p>
+
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+<h2><i class="fa-solid fa-laptop-code"></i> Servicios</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3><i class="fa-solid fa-screwdriver-wrench"></i> Reparación</h3>
+<p>Diagnóstico, mantenimiento y recuperación de equipos.</p>
+</div>
+
+<div class="card">
+<h3><i class="fa-solid fa-code"></i> Software</h3>
+<p>Desarrollo de sistemas y aplicaciones personalizadas.</p>
+</div>
+
+<div class="card">
+<h3><i class="fa-solid fa-headset"></i> Soporte</h3>
+<p>Asistencia técnica eficiente y profesional.</p>
+</div>
+
+</div>
+</section>
+
+<!-- EQUIPO -->
+<section id="equipo">
+<h2><i class="fa-solid fa-users"></i> Nuestro Equipo</h2>
+
+<div class="cards">
+
+<a href="integrantes/said.html" class="card link">
+<h3>Said Lizárraga</h3>
+<p>Director General</p>
+</a>
+
+<a href="integrantes/gael.html" class="card link">
+<h3>Gael Rodríguez</h3>
+<p>Desarrollo</p>
+</a>
+
+<a href="integrantes/esmeralda.html" class="card link">
+<h3>Esmeralda Rangel</h3>
+<p>Finanzas</p>
+</a>
+
+<a href="integrantes/benito.html" class="card link">
+<h3>Benito Medina</h3>
+<p>Redes</p>
+</a>
+
+<a href="integrantes/adrian.html" class="card link">
+<h3>Adrián Morales</h3>
+<p>Operaciones</p>
+</a>
+
+<a href="integrantes/juan.html" class="card link">
+<h3>Juan Beltran</h3>
+<p>Marketing Digital</p>
+</a>
+
+</div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+<h2><i class="fa-solid fa-address-book"></i> Contacto</h2>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+<a href="https://www.google.com/maps?q=Mazatlan+Sinaloa" target="_blank" style="color:#00ff88; text-decoration:none;">
+Mazatlán, Sinaloa (Ver ubicación)
+</a>
+</p>
+
+<p><i class="fa-solid fa-phone"></i> +52 669 269 5443</p>
+<p><i class="fa-solid fa-envelope"></i> clyra.it@gmail.com</p>
+
+<form>
+<input type="text" placeholder="Nombre">
+<input type="email" placeholder="Correo">
+<textarea placeholder="Mensaje"></textarea>
+<button>Enviar</button>
+</form>
+
+</section>
+
+<footer>
+<p>© 2026 Clyra Innovations</p>
+</footer>
+
+<!-- MUSICA -->
+<audio id="musica" autoplay loop>
+<source src="audio/pantallap.m4a" type="audio/mp3">
+</audio>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/526692695443" target="_blank" class="whatsapp">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script>
+
+/* SCROLL SUAVE */
+function scrollToContacto(){
+document.getElementById("contacto").scrollIntoView({behavior:"smooth"});
+}
+
+/* MUSICA */
+let musica = document.getElementById("musica");
+let icono = document.querySelector(".music-btn i");
+
+function toggleMusic(){
+    if(musica.paused){
+        musica.play();
+        icono.className = "fa-solid fa-volume-high";
+    }else{
+        musica.pause();
+        icono.className = "fa-solid fa-volume-xmark";
+    }
+}
+
+/* OCULTAR HEADER */
+let lastScroll = 0;
+let header = document.querySelector("header");
+
+window.addEventListener("scroll", function(){
+
+    let currentScroll = window.pageYOffset;
+
+    if(currentScroll > lastScroll + 10){
+        header.classList.add("header-hide");
+    }else if(currentScroll < lastScroll - 10){
+        header.classList.remove("header-hide");
+    }
+
+    lastScroll = currentScroll;
+
+});
+
+</script>
+
+</body>
+</html>
